@@ -1,8 +1,7 @@
 # consult: https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/#/add-or-copy
 # Forked: https://hub.docker.com/r/amancevice/pandas
-FROM		alpine:3.4
+FROM		phirov/python:3
 MAINTAINER	phirov@163.com
 
-RUN		apk add --no-cache python3-dev g++ && \
-		ln -s /usr/include/locale.h /usr/include/xlocale.h && \
-		pip3 install --upgrade pip
+RUN		pip3 install numpy==1.11.2 cython==0.25.1 && \
+		pip3 install pandas

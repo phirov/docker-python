@@ -2,13 +2,16 @@
 
 Python docker images on alpine linux.
 
-Inspireded from *[@amancevice](https://github.com/amancevice/pandas)*
+Inspireded from [@amancevice](https://github.com/amancevice/pandas) and [jfloff](https://github.com/jfloff/alpine-python)
 
 ## Images list
 
-###### [Python](https://hub.docker.com/r/phirov/python/)
 
 |image     | version | Dockerfiles |
 -----------|---------|------------------
-|**python**| `2`, `latest` | *([2/Dockerfile](https://github.com/phirov/docker-python/tree/master/pure/2/Dockerfile))* |
-|          | `3`     | *([3/Dockerfile](https://github.com/phirov/docker-python/tree/master/pure/3/Dockerfile))* |
+|**python**| `2`, `latest` | *([2/Dockerfile](https://github.com/phirov/docker-python/tree/master/python/2/Dockerfile))* |
+|          | `3`     | *([3/Dockerfile](https://github.com/phirov/docker-python/tree/master/python/3/Dockerfile))* |
+|**pandas**| `0.19-2`, `latest` | *([0.19/2/Dockerfile](https://github.com/phirov/docker-python/tree/master/pandas/0.19/2/Dockerfile))* |
+|          | `0.19-3`| *([0.19/3/Dockerfile](https://github.com/phirov/docker-python/tree/master/pandas/0.19/3/Dockerfile))* |
+|          | `0.18-2`| *([0.18/2/Dockerfile](https://github.com/phirov/docker-python/tree/master/pandas/0.18/2/Dockerfile))* |
+|          | `0.18-3`| *([0.18/3/Dockerfile](https://github.com/phirov/docker-python/tree/master/pandas/0.18/3/Dockerfile))* |
