@@ -1,9 +1,14 @@
-# Python on Alpine Linux
+# Python images on Alpine Linux
 
-Basic python docker image based on alpine linux.
-Folked from *([amancevice/python](https://github.com/amancevice/pandas))
+Python docker images on alpine linux.
 
-## Dockerfile Links
+Inspireded from *([@amancevice](https://github.com/amancevice/pandas))
 
-* `2`, `latest` *([2/Dockerfile](./2/Dockerfile))*
-* `3` *([3/Dockerfile](./3/Dockerfile))*
+## Images list
+
+###### [Python](https://hub.docker.com/r/phirov/python/)
+
+version | Dockerfiles
+--------|------------------
+ `2`, `latest` | *([2/Dockerfile](https://github.com/phirov/docker-python/pure/2/Dockerfile))*
+ `3` | *([3/Dockerfile](https://github.com/phirov/docker-python/pure/3/Dockerfile))*
