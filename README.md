@@ -2,7 +2,7 @@
 
 Python docker images on alpine linux.
 
-Inspireded from *([@amancevice](https://github.com/amancevice/pandas))*
+Inspireded from *[@amancevice](https://github.com/amancevice/pandas)*
 
 ## Images list
 
@@ -11,4 +11,4 @@ Inspireded from *([@amancevice](https://github.com/amancevice/pandas))*
 image    | version | Dockerfiles
 ---------|--------|------------------
 python   | `2`, `latest` | *([2/Dockerfile](https://github.com/phirov/docker-python/tree/master/pure/2/Dockerfile))*
-** | `3` | *([3/Dockerfile](https://github.com/phirov/docker-python/tree/master/pure/3/Dockerfile))*
+* * | `3` | *([3/Dockerfile](https://github.com/phirov/docker-python/tree/master/pure/3/Dockerfile))*
