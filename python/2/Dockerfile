@@ -3,6 +3,8 @@
 FROM		alpine:3.4
 MAINTAINER	phirov@163.com
 
-RUN		apk add --no-cache python-dev py-pip g++ && \
+RUN		apk add --no-cache python-dev py-pip && \
+		apk add --no-cache --virtual .build-deps g++ && \
+		apk del .build-deps && \
 		ln -s /usr/include/locale.h /usr/include/xlocale.h && \
 		pip install --upgrade pip
