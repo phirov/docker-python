@@ -4,7 +4,5 @@ FROM		alpine:3.4
 MAINTAINER	phirov@163.com
 
 RUN		apk add --no-cache python3-dev && \
-		apk add --no-cache --virtual .build-deps g++ && \
-		apk del .build-deps && \
 		ln -s /usr/include/locale.h /usr/include/xlocale.h && \
 		pip3 install --upgrade pip
