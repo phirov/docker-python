@@ -2,7 +2,7 @@
 
 Python docker images on alpine linux.
 
-Inspireded from [@amancevice](https://hub.docker.com/amancevice/pandas), [@jfloff](https://hub.docker.com/r/jfloff/alpine-python/) and [gliderlabs](http://gliderlabs.viewdocs.io/docker-alpine/usage/)
+Inspireded from [@amancevice](https://hub.docker.com/r/amancevice/pandas), [@jfloff](https://hub.docker.com/r/jfloff/alpine-python/) and [@gliderlabs](http://gliderlabs.viewdocs.io/docker-alpine/usage/)
 
 ## Images list
 
