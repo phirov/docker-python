@@ -6,7 +6,7 @@ MAINTAINER      phirov@163.com
 RUN		ln -sf /usr/share/zoneinfo/Etc/UTC /etc/localtime
 #RUN		echo "http://nl.alpinelinux.org/alpine/v3.4/main" > /etc/apk/repositories
 
-COPY		scipy/2/libs/* /tmp/
+COPY		libs/* /tmp/
 
 RUN		apk update && \
 		apk add --no-cache --virtual build-deps \
