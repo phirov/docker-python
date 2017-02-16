@@ -4,9 +4,9 @@ FROM		phirov/python:3
 MAINTAINER	phirov@163.com
 
 RUN		apk add --no-cache --virtual build-deps g++ && \
-		pip3 install cython==0.25.2 \
-                             numpy==1.12.0 \
-                             scipy==0.18.1 \
+		pip3 install numpy==1.12.0 \
+                             cython==0.25.2 && \
+                pip3 install scipy==0.18.1 \
                              pandas==0.19.2 && \
 		pip3 install jmespath pymongo && \
 		apk del build-deps
