@@ -3,6 +3,4 @@
 FROM		phirov/scipy:2
 MAINTAINER	phirov@163.com
 
-RUN		apk add --no-cache --virtual build-deps g++ && \
-		pip install jmespath pymongo && \
-		apk del build-deps
+RUN		pip install jmespath pymongo
