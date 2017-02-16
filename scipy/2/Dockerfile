@@ -9,7 +9,7 @@ RUN		ln -sf /usr/share/zoneinfo/Etc/UTC /etc/localtime
 COPY		libs/* /tmp/
 
 RUN		apk update && \
-		apk add --no-cache --virtual build-deps \
+		apk add --no-cache --virtual .build-deps \
 		        g++ \
 		        ca-certificates \
 		        openntpd \
@@ -23,8 +23,8 @@ RUN		apk update && \
 		# Install cython, numpy, pandas, scipy
 		export BLAS=~/src/BLAS/libfblas.a && \
 		export LAPACK=~/src/lapack-3.5.0/liblapack.a && \
-		#pip install numpy==1.11.2 cython==0.25.1 && \
-		#pip install pandas==0.19.1 && \
+		#pip install numpy==1.12.0 cython==0.25.2 && \
+		#pip install pandas==0.19.2 && \
 		pip install scipy==0.18.1 && \
 		# Clean up
 		mv ~/src/BLAS/libfblas.a /tmp/ && \
@@ -37,6 +37,4 @@ RUN		apk update && \
 		rm -rf ~/.cache/pip && \
 		# Remove all the extra build stuff
 		apk del build-base "*-dev" && \
-		apk del build-deps
-
-
+		apk del .build-deps
