@@ -36,7 +36,7 @@ RUN		apk update && \
 		rm -rf /tmp/* && \
 		rm -rf ~/.cache/pip && \
 		# Remove all the extra build stuff
-		apk del build-base "*-dev" && \
-		apk del .build-deps
+		apk del build-base "*-dev"
+		#apk del .build-deps
 
 
