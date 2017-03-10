@@ -4,6 +4,8 @@ Python docker images on alpine linux.
 
 Inspireded from [@amancevice](https://hub.docker.com/r/amancevice/pandas), [@jfloff](https://hub.docker.com/r/jfloff/alpine-python/) and [@gliderlabs](http://gliderlabs.viewdocs.io/docker-alpine/usage/)
 
+Miniconda inspireded from [frol](https://github.com/frol/docker-alpine-miniconda2)
+
 ## Images list
 
 
