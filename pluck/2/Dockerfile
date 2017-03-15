@@ -3,6 +3,8 @@
 FROM		phirov/pandas:0.19-2
 MAINTAINER	phirov@163.com
 
+ENV		PYMSSQL_BUILD_WITH_BUNDLED_FREETDS 1
+
 RUN		apk add --no-cache \
                         --virtual .build-deps \
                         gcc \
@@ -11,11 +13,15 @@ RUN		apk add --no-cache \
                         python-dev \
                         postgresql-dev \
 		        py-psycopg2 \
+                        freetds-dev \
 		        unixodbc-dev && \
-		pip install pykafka && \
-		pip install pymongo && \                
-		pip install pyodbc \
-		            psycopg2 && \
-		pip install boto \
-                            boto3
+		pip install pykafka \
+		            pymongo \
+                            boto \
+                            boto3 \
+		            pyodbc \
+		            psycopg2 \
+                            setuptools_git \
+		            rarfile && \
+		pip install pymssql
 		#apk del .build-deps
